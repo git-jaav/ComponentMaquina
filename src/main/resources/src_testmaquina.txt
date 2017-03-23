@@ -1,0 +1,4 @@
+D:\Documentos\3_FISI\programas\TestMaquina\src\Automata.java
+D:\Documentos\3_FISI\programas\TestMaquina\src\FTexto.java
+D:\Documentos\3_FISI\programas\TestMaquina\src\Maquina.java
+D:\Documentos\3_FISI\programas\TestMaquina\src\TestMaquina.java
