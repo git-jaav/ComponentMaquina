@@ -2,19 +2,41 @@ package pe.jaav.sistemas.algoritmos;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.StringTokenizer;
 
 public class ProblemasMain {
 
 	public static void main(String[] args) {
 		System.out.println("***** [INICIO RESOLUCION] ****");	
 		ProblemasMain prob = new ProblemasMain();
-		prob.resolverProblemaDistancias();
+		prob.getInput();
+		
+		//prob.resolverProblemaDistancias();
+		
+		
 	}
 
 	private List<Double> distanciasRecorridas;
 	
+	public  void getInput(){
+		String input="AAAAA\nBBBBB\nCCCCC\n1 2 3 ";
+		StringTokenizer stInput = new StringTokenizer(input,"\n");
+		int countLinea=0;
+		while (stInput.hasMoreElements()) {
+			String linea = stInput.nextToken();
+			StringTokenizer stInputLinea = new StringTokenizer(linea," ");
+			while (stInputLinea.hasMoreElements()) {
+				String object =  stInputLinea.nextToken();
+				
+			}			
+			System.out.println("[TEST:]("+(countLinea+1)+")>>:"+linea+"<<");
+			countLinea++;
+		}							
+	}
+	
 	public  void resolverProblemaDistancias(){
 		distanciasRecorridas = new ArrayList<Double>();
+		
 		int N = 6;
 		int E = 1;
 		int S = 4;
